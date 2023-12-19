@@ -1,2 +1,2 @@
 # serial-cheer
-UPCOMING PROJECT - come back soon!
+come back soon!
