@@ -1,4 +1,5 @@
 const express = require('express');
+//mongoose connection
 const cheer = require('./config/connection');
 const routes = require('./routes');
 
@@ -9,6 +10,7 @@ serial.use(express.json());
 serial.use(express.urlencoded({ extended: true }));
 serial.use(routes);
 
+//start server
 cheer.once('open', () => {
     serial.listen(PORT, () => {
         console.log(`
