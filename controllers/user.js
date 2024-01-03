@@ -2,7 +2,7 @@ const { User, Thought } = require('../models');
 
 const userController = {
 
-    //GET all users
+    //all users
     async getUsers(req, res) {
         try {
             const users = await User.find()
@@ -15,7 +15,7 @@ const userController = {
         }
     },
 
-    //GET user by id
+    //user by id
     async getUserById(req, res) {
         try {
             const user = await User.findById({ _id: req.params.id })
@@ -30,11 +30,55 @@ const userController = {
             return res.status(500).json(err);
         }
     },
-//create user
-//update user
-//delete user
-//add friend
-//delete friend
+
+    //create user
+    async createUser(req, res) {
+        try {
+            const user = await User.create(req.body);
+        return res.status(200).json(user);
+        } catch (err) {
+            console.log(err);
+            return res.status(500).json(err);
+        }
+    },
+
+    //update user
+    async updateUser(req, res) {
+        try {
+            const user = await User.findByIdAndUpdate(
+                { _id: req.params.id },
+                { $set: req.body },
+                { runValidators: true, new: true }
+            );
+            if (!user) {
+                return res.status(404).json({ message: 'user not found'});
+            }
+            return res.status(200).json(user);
+        } catch(err) {
+            console.log(err);
+            return res.status(500).json(err);
+        }
+    },
+
+    //delete user & associated thoughts
+    async deleteUser(req, res) {
+        try {
+            const user = await User.findByIdAndDelete({ _id: req.params.id});
+            if (!user) {
+                return res.status(404).json({ message: 'user not found' });
+            }
+            await Thought.deleteMany({ _id: { $in: user.thoughts } });
+            return res.satus(200).json({ message: 'user & associated thoughts/reactions deleted' });
+        } catch(err) {
+            console.log(err);
+            return res.status(500).json(err);
+        }
+    },
+
+
+
+    //add friend
+    //delete friend
 
 };
 
