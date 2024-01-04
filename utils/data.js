@@ -1,13 +1,16 @@
 //users
-const users = [];
-//username, email, thought
+const userSeed = [
+    { username: 'lady', email: 'lady@gmail.com', thought: [] }
+];
 
 //thoughts
-const thoughts = [];
-//thoughtText - with username
+const thoughtSeed = [
+    { thoughtText: 'test', username: 'lady', reaction: [] }
+];
 
 //reactions
-const reactions = [];
-//reactionBody - with username
+const reactionSeed = [
+    { reactionBody: 'test', username: 'lady' }
+];
 
-module.exports = { users, thoughts, reactions }
+module.exports = { userSeed, thoughtSeed, reactionSeed }
