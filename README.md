@@ -85,25 +85,25 @@ npm i express dotenv mongoose moment
 
       ##### view [demo videos](#demo) and [testing](#testing) for further help
 
-<!-- 
+
 ### ![screenshot](./criminally-cray/branding/12.png)
              
-##### *screenshot demonstrates `SERIAL SOCIAL's` back end, testing all routes with **Insomnia*** -->
+##### *screenshot demonstrates `SERIAL SOCIAL's` back end, testing all routes with **Insomnia***
 
 <!-- <p align="center">
 <img src="./criminally-cray/demo/ss.png"/>
 </p> -->
-<!-- 
+
 
 ### ![demo](./criminally-cray/branding/13.png)
 
-##### **users** -->
+##### **users**
 
 <!-- <p align="left">
 <img src="./criminally-cray/demos/users.gif"/>
 </p> -->
-<!-- 
-##### **thoughts** -->
+
+##### **thoughts**
 
 <!-- <p align="left">
 <img src="./criminally-cray/demos/thoughts.gif"/>
