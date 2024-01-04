@@ -140,23 +140,23 @@ Here's a list of technologies used:
 
 8. [MongoDB Compass](https://www.mongodb.com/products/tools/compass) - **MongoDB's** `GUI tool` for querying, optimizing, and analyzing data.
 
-<!-- 
-### ![license](./criminally-cray/branding/5.png) -->
 
-<!-- ##### [mit license](./LICENSE) -->
-<!-- 
+### ![license](./criminally-cray/branding/5.png)
+
+##### [mit license](./LICENSE)
+
 ### ![links](./criminally-cray/branding/6.png)
 
-##### [*github repo*](https://github.com/christiecamp/serial-socail) -->
+##### [*github repo*](https://github.com/christiecamp/serial-socail)
 
-<!-- 
-### ![connect](./criminally-cray/branding/7.png) -->
 
-<!-- [![github badge](https://img.shields.io/badge/christiecamp-gray.svg?&logo=Github&logoColor=white)](https://github.com/christiecamp/serial-social)
+### ![connect](./criminally-cray/branding/7.png)
+
+[![github badge](https://img.shields.io/badge/christiecamp-gray.svg?&logo=Github&logoColor=white)](https://github.com/christiecamp/serial-social)
 
 <a href="mailto:christiecamphoto@gmail.com">
 <img src="https://img.shields.io/badge/gmail-brown.svg?&logo=Gmail&logoColor=white" />
-</a> -->
+</a>
 
 #
     🚧  under construction - come back soon!🚜
