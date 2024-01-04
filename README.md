@@ -110,4 +110,53 @@ npm i express dotenv mongoose moment
 </p> -->
 
 #
+
+### ![testing](./criminally-cray/branding/8.png)
+
+**TESTING WITH INSOMNIA or MONGODB COMPASS:**
+
+There are different tools available that can test reading/writing operations in a web browser - in this application we use [Insomnia](https://insomnia.rest/), a *REST client* that makes it easy to send **HTTP requests** to an API and view response details, and [MongoDB Compass](https://www.mongodb.com/products/tools/compass) the *GUI* for MongoDB.
+
+
+#
+
+### ![sources](./criminally-cray/branding/4.png)
+
+Here's a list of technologies used:
+
+1. [Node.js](https://nodejs.org/en) - an open-source, cross-platform JavaScript runtime environment.
+
+2. [Express.js](<(https://expressjs.com)>) - a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
+3. [MongoDB](https://www.mongodb.com/) - a *NoSQL* database product that utilizes **JSON**-like documents with optional schemas.
+
+4. [Mongoose](https://mongoosejs.com/) -  a Node.js-based **Object Data Modeling** *(ODM) library* for MongoDB. It is akin to an Object Relational Mapper (ORM) such as Sequelize for MySQL relational databases.
+
+5. [Moment.js](https://momentjs.com/) - JavaScript library that helps parse, validate, and manipulate date objects
+
+6. [Dotenv](https://www.npmjs.com/package/dotenv) - a zero-dependency module that loads environment variables from a .env file into `process.env`.
+
+7. [Insomnia](https://insomnia.rest/) - an open source desktop application that assists in designing, debugging, and testing APIs (specifically in this instance, HTTP-based RESTful APIs).
+
+8. [MongoDB Compass](https://www.mongodb.com/products/tools/compass) - **MongoDB's** `GUI tool` for querying, optimizing, and analyzing data.
+
+<!-- 
+### ![license](./criminally-cray/branding/5.png) -->
+
+<!-- ##### [mit license](./LICENSE) -->
+<!-- 
+### ![links](./criminally-cray/branding/6.png)
+
+##### [*github repo*](https://github.com/christiecamp/serial-socail) -->
+
+<!-- 
+### ![connect](./criminally-cray/branding/7.png) -->
+
+<!-- [![github badge](https://img.shields.io/badge/christiecamp-gray.svg?&logo=Github&logoColor=white)](https://github.com/christiecamp/serial-social)
+
+<a href="mailto:christiecamphoto@gmail.com">
+<img src="https://img.shields.io/badge/gmail-brown.svg?&logo=Gmail&logoColor=white" />
+</a> -->
+
+#
     🚧  under construction - come back soon!🚜
