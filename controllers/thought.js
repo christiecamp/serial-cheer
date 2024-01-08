@@ -17,9 +17,8 @@ const thoughtController = {
     //thoughts by id
     async getThoughtById(req, res) {
         try {
-            const thought = await Thought.findById({ _id: req.params.id
-            })
-            .populate({ path: 'reactions', select: '-__v' });
+            const thought = await Thought.findById({ _id: req.params.thoughtId })
+                .populate({ path: 'reactions', select: '-__v' });
             if (!thought) {
                 return res.status(404).json({ message: 'id not found' })
             }
@@ -35,9 +34,8 @@ const thoughtController = {
         try {
             const thought = await Thought.create(req.body);
             const user = await User.findByIdAndUpdate(
-                { _id: req.params.id },
+                { _id: body.userId },
                 { $push: { thoughts: thought._id } },
-                //$addToSet
                 { new: true }
             );
             if (!user) {
@@ -45,7 +43,6 @@ const thoughtController = {
             }
             //update as soon as code is polished
             res.status(200);
-            res.json(thought);
             res.json(user);
         } catch (err) {
             console.log(err);
@@ -62,7 +59,7 @@ const thoughtController = {
                 { runValidators: true, new: true }
             );
             if (!thought) {
-                return res.status(404).json({ message: 'id not found '});
+                return res.status(404).json({ message: 'id not found ' });
             }
             return res.status(200).json(thought);
         } catch (err) {
@@ -75,20 +72,20 @@ const thoughtController = {
     async deleteThought(req, res) {
         try {
             //thought
-            const thought = await Thought.findByIdAndDelete({ _id: req.params.id });
+            const thought = await Thought.findByIdAndDelete({ _id: req.params.thoughtId });
             if (!thought) {
                 return res.status(404).json({ message: 'id not found' });
             }
             //remove thought from user
             const user = await User.findByIdAndUpdate(
-                { thoughts: req.params.id },
-                { $pull: { thoughts: req.params.id } },
+                { thoughts: params.id },
+                { $pull: { thoughts: params.id } },
                 { new: true }
-            );
+            )
             if (!user) {
                 return res.status(404).json({ message: 'thought created but user not found' });
             }
-            res.status(200).json({ message: 'thought deleted!' });
+            return res.status(200).json({ message: 'thought deleted!' });
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);

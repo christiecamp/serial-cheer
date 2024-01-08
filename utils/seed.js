@@ -16,7 +16,18 @@ connection.once('open', async () => {
     const thoughts = [];
 
     //add objects - user
-
+    for (let i = 0; i <userSeed.length; i++) {
+        const killer = {
+            username: userSeed[i].username,
+            email: userSeed[i].email
+        };
+        const newKiller = await User.create(killer);
+        users.push({
+            _id: newKiller._id.toString(),
+            username: newKiller.username,
+            email: newKiller.email
+        });
+    };
 
     //add objects - thoughs
 

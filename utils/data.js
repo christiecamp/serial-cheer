@@ -1,11 +1,11 @@
 //users
 const userSeed = [
-    { username: 'lady', email: 'lady@gmail.com', thought: [] }
+    { username: 'lady', email: 'lady@gmail.com', thoughts: [] }
 ];
 
 //thoughts
 const thoughtSeed = [
-    { thoughtText: 'test', username: 'lady', reaction: [] }
+    { thoughtText: 'test', username: 'lady' }
 ];
 
 //reactions
