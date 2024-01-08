@@ -29,7 +29,7 @@ connection.once('open', async () => {
         });
     };
 
-    //add objects - thoughs
+    //add objects - thoughts
     for (let i = 0; i < thoughtSeed.length; i++) {
         const serial = {
             thoughtText: thoughtSeed[i].thoughtText,
@@ -44,7 +44,7 @@ connection.once('open', async () => {
     };
 
     //add objects - thoughts to users
-    for (let i =0; i < thoughts.length; i++) {
+    for (let i = 0; i < thoughts.length; i++) {
         const killerId = users.filter(
             (killer) => killer.username === thoughts[i].username
         );
