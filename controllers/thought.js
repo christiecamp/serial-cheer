@@ -6,7 +6,7 @@ const thoughtController = {
     async getThoughts(req, res) {
         try{
             const thoughts = await Thought.find()
-                .populate({ path: 'reactions', select: '-__v' });
+                // .populate({ path: 'reactions', select: '-__v' });
             return res.status(200).json(thoughts);
         } catch (err) {
             console.log(err);

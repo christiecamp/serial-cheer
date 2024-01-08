@@ -6,12 +6,12 @@ const UserSchema = new Schema(
             type: String,
             unique: true,
             trim: true,
-            required: '',
+            required: 'username required',
         },
         email: {
             type: String,
             unique: true,
-            required: '',
+            required: 'email required',
             match: [/.+@.+\..+/],
         },
         thoughts: [{
@@ -30,7 +30,7 @@ const UserSchema = new Schema(
 );
 
 UserSchema
-.virtual('friendcount')
+.virtual('friendCount')
 .get(function() {
     return this.friends.length;
 });
