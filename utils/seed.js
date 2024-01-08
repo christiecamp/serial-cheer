@@ -30,6 +30,30 @@ connection.once('open', async () => {
     };
 
     //add objects - thoughs
+    for (let i = 0; i < thoughtSeed.length; i++) {
+        const serial = {
+            thoughtText: thoughtSeed[i].thoughtText,
+            username: thoughtSeed[i].username,
+            reactions: [reactionSeed[i]]
+        };
+        const newSerial = await Thought.create(serial);
+        thoughts.push({
+            _id: newSerial._id.toString(),
+            username: newSerial.username
+        });
+    };
+
+    //add objects - thoughts to users
+    for (let i =0; i < thoughts.length; i++) {
+        const killerId = users.filter(
+            (killer) => killer.username === thoughts[i].username
+        );
+        await User.findByIdAndUpdate(
+            { _id: killerId[0]._id },
+            { $push: { thoughts: thoughts[i]._id } },
+            { new: true }
+        );
+    };
 
 //loop through & display
 console.table(users);
