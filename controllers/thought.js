@@ -5,8 +5,7 @@ const thoughtController = {
     //all thoughts
     async getThoughts(req, res) {
         try{
-            const thoughts = await Thought.find()
-                // .populate({ path: 'reactions', select: '-__v' });
+            const thoughts = await Thought.find({})
             return res.status(200).json(thoughts);
         } catch (err) {
             console.log(err);
@@ -17,8 +16,7 @@ const thoughtController = {
     //thoughts by id
     async getThoughtById(req, res) {
         try {
-            const thought = await Thought.findById({ _id: req.params.thoughtId })
-                .populate({ path: 'reactions', select: '-__v' });
+            const thought = await Thought.findOne({ _id: req.params.thoughtId })
             if (!thought) {
                 return res.status(404).json({ message: 'id not found' })
             }
@@ -34,16 +32,14 @@ const thoughtController = {
         try {
             const thought = await Thought.create(req.body);
             const user = await User.findByIdAndUpdate(
-                { _id: body.userId },
-                { $push: { thoughts: thought._id } },
-                { new: true }
+                { _id: req.body.userId },
+                { $addToSet: { thoughts: thought._id } },
+                { runValidators: true, new: true }
             );
             if (!user) {
                 return res.status(404).json({ message: 'thought created but user not found' });
             }
-            //update as soon as code is polished
-            res.status(200);
-            res.json(user);
+        return res.json(thought);
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
@@ -54,14 +50,14 @@ const thoughtController = {
     async updateThought(req, res) {
         try {
             const thought = await Thought.findByIdAndUpdate(
-                { _id: req.params.id },
+                { _id: req.params.thoughtId },
                 { $set: req.body },
                 { runValidators: true, new: true }
             );
             if (!thought) {
                 return res.status(404).json({ message: 'id not found ' });
             }
-            return res.status(200).json(thought);
+        return res.status(200).json(thought);
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
@@ -74,18 +70,18 @@ const thoughtController = {
             //thought
             const thought = await Thought.findByIdAndDelete({ _id: req.params.thoughtId });
             if (!thought) {
-                return res.status(404).json({ message: 'id not found' });
+                return res.status(404).json({ message: 'thought not found' });
             }
-            //remove thought from user
-            const user = await User.findByIdAndUpdate(
-                { thoughts: params.id },
-                { $pull: { thoughts: params.id } },
+            // remove thought from user
+            const user = await User.findByIdAndDelete(
+                { thoughts: req.params.thoughtId },
+                { $pull: { thoughts: req.params.thoughtId } },
                 { new: true }
-            )
+            );
             if (!user) {
-                return res.status(404).json({ message: 'thought created but user not found' });
+                return res.status(404).json({ message: 'thought deleted but user not found' });
             }
-            return res.status(200).json({ message: 'thought deleted!' });
+        res.status(200).json({ message: 'thought deleted!' });
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
@@ -97,7 +93,7 @@ const thoughtController = {
         try {
             const thought = await Thought.findByIdAndUpdate(
                 { _id: req.params.thoughtId },
-                { $addtoSet: { reactions: body } },
+                { $addToSet: { reactions: body } },
                 { runValidators: true, new: true }
             );
             if (!thought) {

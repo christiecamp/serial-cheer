@@ -56,7 +56,7 @@ cheer.once('open', () => {
          '---''   ''----'
 
         =============================
-           Welcome to SERIAL CHEER  
+           Welcome to SERIAL SOCIAL  
         #1 TRUE CRIME SOCIAL NETWORK
         =============================
 
