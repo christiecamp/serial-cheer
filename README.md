@@ -104,15 +104,21 @@ npm i express dotenv mongoose moment
 
 ##### **friends**
 
+<!-- <p align="center">
+<img src="./criminally-cray/demo/friends.gif"/>
+</p> -->
 
 ##### **thoughts**
 
-<!-- <p align="left">
-<img src="./criminally-cray/demos/thoughts.gif"/>
-</p> -->
+<p align="center">
+<img src="./criminally-cray/demo/thoughts.gif"/>
+</p>
 
 ##### **reactions**
 
+<!-- <p align="center">
+<img src="./criminally-cray/demo/reactions.gif"/>
+</p> -->
 
 #
 
@@ -154,9 +160,9 @@ Here's a list of technologies used:
 
 ##### [*github repo*](https://github.com/christiecamp/serial-socail)
 
-##### [*user demo*]()
+##### [*user demo*](https://drive.google.com/file/d/1mhDklRDZuFcHsh-oDlRp2SE-A0XuQxOQ/view)
 
-##### [*thoughts demo*]()
+##### [*thoughts demo*](https://drive.google.com/file/d/1NDbBV5hxOkd9h4QUrfUaBiQyR3_2yYsL/view)
 
 ##### [*reactions demo*]()
 
