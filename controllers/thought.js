@@ -72,15 +72,15 @@ const thoughtController = {
             if (!thought) {
                 return res.status(404).json({ message: 'thought not found' });
             }
-            // remove thought from user
-            const user = await User.findByIdAndDelete(
-                { thoughts: req.params.thoughtId },
-                { $pull: { thoughts: req.params.thoughtId } },
-                { new: true }
-            );
-            if (!user) {
-                return res.status(404).json({ message: 'thought deleted but user not found' });
-            }
+            // // remove thought from user
+            // const user = await User.findByIdAndUpdate(
+            //     { thoughts: req.params.thoughtId },
+            //     { $pull: { thoughts: req.params.thoughtId } },
+            //     { new: true }
+            // );
+            // if (!user) {
+            //     return res.status(404).json({ message: 'thought deleted but user not found' });
+            // }
         res.status(200).json({ message: 'thought deleted!' });
         } catch (err) {
             console.log(err);
