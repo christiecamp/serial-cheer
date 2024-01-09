@@ -80,7 +80,7 @@ npm i express dotenv mongoose moment
       * GET user & thought by id
       * CREATE user, thought, reaction
       * UPDATE user, thought, friend, & reaction
-      * DELETE user & thought, friend, & reaction
+      * DELETE user, thought, friend, & reaction
 
       ##### view [demo videos](#demo) and [testing](#testing) for further help
 
@@ -128,6 +128,48 @@ npm i express dotenv mongoose moment
 
 There are different tools available that can test reading/writing operations in a web browser - in this application we use [Insomnia](https://insomnia.rest/), a *REST client* that makes it easy to send **HTTP requests** to an API and view response details, and [MongoDB Compass](https://www.mongodb.com/products/tools/compass) the *GUI* for MongoDB.
 
+1. After installing Insomnia, open a new document.
+
+2. Interact with `SERIAL SOCIAL's` back end  by testing the below commands:
+
+##### **GET** all users, thoughts
+```json
+http://localhost:3013/api/users/
+```
+```json
+http://localhost:3013/api/thoughts/
+```
+
+##### **GET** thought by *id*
+```json
+http://localhost:3013/api/thoughts/659d7eac47d1a55210e92aca
+```
+
+##### **CREATE** reaction
+```json
+http://localhost:3013/api/thoughts/659d93d6da28d9bb5489eb0d/reactions
+```
+```json
+{
+	"reactionBody": " ",
+	"username": " "
+}
+```
+
+##### **UPDATE** user
+```json
+http://localhost:3013/api/users/659d8a1ce2019aeeb57c5156
+```
+```json
+{
+  "username": " ",
+  "email": " "
+}
+```
+##### **DELETE** friend
+```json
+http://localhost:3013/api/users/userId/friends/friendId
+```
 
 #
 
@@ -160,13 +202,15 @@ Here's a list of technologies used:
 
 ##### [*github repo*](https://github.com/christiecamp/serial-socail)
 
-##### [*user demo*](https://drive.google.com/file/d/1mhDklRDZuFcHsh-oDlRp2SE-A0XuQxOQ/view)
+##### **video demos**:
 
-##### [*thoughts demo*](https://drive.google.com/file/d/1NDbBV5hxOkd9h4QUrfUaBiQyR3_2yYsL/view)
+  * ##### [*user demo*](https://drive.google.com/file/d/1mhDklRDZuFcHsh-oDlRp2SE-A0XuQxOQ/view)
 
-##### [*reactions demo*](https://drive.google.com/file/d/19q1YCaKUpMrxIkBlt9iIdOPKbjzNdbz2/view)
+  * ##### [*thoughts demo*](https://drive.google.com/file/d/1NDbBV5hxOkd9h4QUrfUaBiQyR3_2yYsL/view)
 
-##### [*friends demo*](https://drive.google.com/file/d/1y84m9UdARSZ5oo8DMSfJeYn4kv6CWewc/view)
+  * ##### [*reactions demo*](https://drive.google.com/file/d/19q1YCaKUpMrxIkBlt9iIdOPKbjzNdbz2/view)
+  
+  * ##### [*friends demo*](https://drive.google.com/file/d/1y84m9UdARSZ5oo8DMSfJeYn4kv6CWewc/view)
 
 ### ![connect](./criminally-cray/branding/7.png)
 
