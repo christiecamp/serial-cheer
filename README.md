@@ -102,11 +102,17 @@ npm i express dotenv mongoose moment
 <img src="./criminally-cray/demos/users.gif"/>
 </p> -->
 
+##### **friends**
+
+
 ##### **thoughts**
 
 <!-- <p align="left">
 <img src="./criminally-cray/demos/thoughts.gif"/>
 </p> -->
+
+##### **reactions**
+
 
 #
 
@@ -157,5 +163,5 @@ Here's a list of technologies used:
 <img src="https://img.shields.io/badge/gmail-brown.svg?&logo=Gmail&logoColor=white" />
 </a>
 
-#
-    🚧  under construction - come back soon!🚜
+
+
