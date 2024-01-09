@@ -116,9 +116,9 @@ npm i express dotenv mongoose moment
 
 ##### **reactions**
 
-<!-- <p align="center">
+<p align="center">
 <img src="./criminally-cray/demo/reactions.gif"/>
-</p> -->
+</p>
 
 #
 
@@ -164,7 +164,7 @@ Here's a list of technologies used:
 
 ##### [*thoughts demo*](https://drive.google.com/file/d/1NDbBV5hxOkd9h4QUrfUaBiQyR3_2yYsL/view)
 
-##### [*reactions demo*]()
+##### [*reactions demo*](https://drive.google.com/file/d/19q1YCaKUpMrxIkBlt9iIdOPKbjzNdbz2/view)
 
 ##### [*friends demo*]()
 
