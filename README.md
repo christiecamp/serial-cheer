@@ -38,9 +38,9 @@
 </p>
 
 ### ![acceptance-criteria](./criminally-cray/branding/10.png)
-<!-- <p align="center">
-  <img src="./mining-camp/branding/ac.png"/>
-</p> -->
+<p align="center">
+  <img src="./criminally-cray/branding/ac.png"/>
+</p>
 
 ### ![killer-list](./criminally-cray/branding/11.png)
 <p align="center">
