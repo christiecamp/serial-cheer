@@ -67,7 +67,6 @@ git clone https://github.com/christiecamp/serial-social.git
 npm i express dotenv mongoose moment
 ```
 
-
 #
 
 ### ![usage](./criminally-cray/branding/3.png)
@@ -78,21 +77,21 @@ npm i express dotenv mongoose moment
 
 2. Interact with `SERIAL SOCIAL's` back end with [Insomnia](https://www.npmjs.com/package/inquirer/v/8.2.4) or **MongoDB Compass** by testing the below:
       * GET all users & thoughts
-      * GET user, thought, friend, & reaction by id
-      * CREATE user, thought, & reaction
+      * GET user & thought by id
+      * CREATE user, thought, reaction
       * UPDATE user, thought, friend, & reaction
-      * DELETE user & thought
+      * DELETE user & thought, friend, & reaction
 
       ##### view [demo videos](#demo) and [testing](#testing) for further help
 
 
 ### ![screenshot](./criminally-cray/branding/12.png)
              
-##### *screenshot demonstrates `SERIAL SOCIAL's` back end, testing all routes with **Insomnia***
+##### *screenshot demonstrates `SERIAL SOCIAL's` back end & testing of all routes with **Insomnia***
 
-<!-- <p align="center">
+<p align="center">
 <img src="./criminally-cray/demo/ss.png"/>
-</p> -->
+</p>
 
 
 ### ![demo](./criminally-cray/branding/13.png)
