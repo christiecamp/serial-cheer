@@ -30,12 +30,12 @@
 
 ### ![overview](./criminally-cray/branding/1.png)
 
-`SERIAL SOCIAL` is an API for a social network web application where true crime fanatics can share their thoughts, react to freiends' thoughts, and create a killer friend list. The app uses [Express.js](https://www.npmjs.com/package/express) for **routing**, a [MongoDB](https://www.mongodb.com/) **database**, [Mongoose](https://www.npmjs.com/package/mongoose) as the **ORM**, and the [Moment.js](https://momentjs.com/) npm package for **timestamp formatting**.
+`SERIAL SOCIAL` is an API for a social network web application where true crime fanatics can share their thoughts, react to friends' thoughts, and create a killer friend list. The app uses [Express.js](https://www.npmjs.com/package/express) for **routing**, a [MongoDB](https://www.mongodb.com/) **database**, [Mongoose](https://www.npmjs.com/package/mongoose) as the **ORM**, and the [Moment.js](https://momentjs.com/) npm package for **timestamp formatting**.
 
 ### ![user-story](./criminally-cray/branding/9.png)
-<!-- <p align="center">
+<p align="center">
   <img src="./criminally-cray/branding/user-story.png"/>
-</p> -->
+</p>
 
 ### ![acceptance-criteria](./criminally-cray/branding/10.png)
 <!-- <p align="center">
@@ -43,9 +43,10 @@
 </p> -->
 
 ### ![killer-list](./criminally-cray/branding/11.png)
-<!-- <p align="center">
+<p align="center">
   <img src="./criminally-cray/branding/killer-list.png"/>
-</p> -->
+</p>
+
 #
 
 ### ![installation](./criminally-cray/branding/2.png)
@@ -151,8 +152,8 @@ http://localhost:3013/api/thoughts/659d93d6da28d9bb5489eb0d/reactions
 ```
 ```json
 {
-	"reactionBody": " ",
-	"username": " "
+  "reactionBody": " ",
+  "username": " "
 }
 ```
 
@@ -209,7 +210,7 @@ Here's a list of technologies used:
   * ##### [*thoughts demo*](https://drive.google.com/file/d/1NDbBV5hxOkd9h4QUrfUaBiQyR3_2yYsL/view)
 
   * ##### [*reactions demo*](https://drive.google.com/file/d/19q1YCaKUpMrxIkBlt9iIdOPKbjzNdbz2/view)
-  
+
   * ##### [*friends demo*](https://drive.google.com/file/d/1y84m9UdARSZ5oo8DMSfJeYn4kv6CWewc/view)
 
 ### ![connect](./criminally-cray/branding/7.png)
