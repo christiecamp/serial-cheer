@@ -104,9 +104,9 @@ npm i express dotenv mongoose moment
 
 ##### **friends**
 
-<!-- <p align="center">
+<p align="center">
 <img src="./criminally-cray/demo/friends.gif"/>
-</p> -->
+</p>
 
 ##### **thoughts**
 
@@ -166,7 +166,7 @@ Here's a list of technologies used:
 
 ##### [*reactions demo*](https://drive.google.com/file/d/19q1YCaKUpMrxIkBlt9iIdOPKbjzNdbz2/view)
 
-##### [*friends demo*]()
+##### [*friends demo*](https://drive.google.com/file/d/1y84m9UdARSZ5oo8DMSfJeYn4kv6CWewc/view)
 
 ### ![connect](./criminally-cray/branding/7.png)
 
