@@ -98,9 +98,9 @@ npm i express dotenv mongoose moment
 
 ##### **users**
 
-<!-- <p align="left">
-<img src="./criminally-cray/demos/users.gif"/>
-</p> -->
+<p align="center">
+<img src="./criminally-cray/demo/users.gif"/>
+</p>
 
 ##### **friends**
 
@@ -154,6 +154,13 @@ Here's a list of technologies used:
 
 ##### [*github repo*](https://github.com/christiecamp/serial-socail)
 
+##### [*user demo*]()
+
+##### [*thoughts demo*]()
+
+##### [*reactions demo*]()
+
+##### [*friends demo*]()
 
 ### ![connect](./criminally-cray/branding/7.png)
 
